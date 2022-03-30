@@ -1,0 +1,27 @@
+﻿<!--Sayfanın model tipini bildirdim-->
+<!-- kucuk harfle model tipi bildirme, asagıdaki gibi buyuk harfle Model degiskeni direk verme (instance'ını)'-->
+@model List<Category>
+<div class="row">
+    <div class="col-12 col-md-8">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <td>@category.Id</td>
+                        <td>@category.Name</td>
+                        <td></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
